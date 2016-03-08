@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:: Musica Orquestal Mexicana - Herramienta Administrativa ::</title>
+<link href="../css/admin.css" rel="stylesheet" type="text/css" />
+	<!-- jQuery -->
+	<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="admin.js"></script>  
+    <script type="text/javascript">
+$(document).ready(function()
+{		
+	// Procesamiento del formulario LOGIN	
+	$("#login_form").submit(function()
+	{
+		//remove all the class add the messagebox classes and start fading
+		$("#msgbox").removeClass().addClass('messagebox').text('Validando....').fadeIn(1000);
+		//check the username exists or not from ajax
+		$.post("processLogin.php",{ user:$('#login_user').val(),password:$('#login_pass').val(),rand:Math.random() } ,function(data)
+        {
+		  if(data=='yes') //if correct login detail
+		  {
+		  	$("#msgbox").fadeTo(200,0.1,function()  //start fading the messagebox
+			{ 
+			  //add message and change the class of the box and start fading
+			  $(this).html('Login Correcto. Ingresando...').addClass('messageboxok').fadeTo(900,1,
+              function()
+			  { 
+			  	 //redirect to secure page
+				 $("#main").empty().html('<br><br><center>Cargando el contenido...<br><img width="50" src="../images/loading.gif" /></center>');
+			 	 $.post('mostrarConsolaAdmin.php', {}, function(data) {
+				     $('#main').html(data);
+				 });
+			  });
+			  
+			});
+		  }
+		  else 
+		  {
+		  	$("#msgbox").fadeTo(200,0.1,function() //start fading the messagebox
+			{ 
+			  //add message and change the class of the box and start fading
+			  $(this).html('Login Incorrecto.').addClass('messageboxerror').fadeTo(900,1);
+			});		
+          }
+				
+        });
+ 		return false; //not to post the  form physically
+	});
+	//now call the ajax also focus move from 
+	$("#password").blur(function()
+	{
+		$("#login_form").trigger('submit');
+	});
+	// FIN Login
+	
+
+});
+  </script>   
+      
+</head>
+
+<body>
+<p align="center" style="padding-top:20px;">Herramienta administrativa :: MusicaOrquestal.com.mx </p>
+<div id='main'>
+<div id='login' style="visibility:hidden;">    
+	<form id="login_form" action="" method="post">
+    Usuario:<br>
+	<input type="text" size="30" value="" id="login_user" name="login_user" placeholder="Ingrese su usuario." tabindex="1"/><br /><br>
+    Contraseña:<br>
+    <input type="password" size="30" value="" id="login_pass" name="login_pass" placeholder="Ingrese su contraseña." tabindex="2"/><br /><br>
+    <button name="login" type="submit" id="login_submit" tabindex="3">Ingresar</button>
+    <span id="msgbox" style="display:none"></span>
+    </form>
+
+</div>
+</div>
+<script type="text/javascript"> doLogin(); </script> 
+</body>
+</html>

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+div.profile {
+
+	background-color: #CCC;
+height
+	padding-top:5px;
+	
+
+}
+div.profile h1{
+	font-family:"Simonetta", Georgia;
+	font-size: 20px;
+	font-weight: normal;
+	color: #900;
+	padding: 6px;	
+	}
+
+span.name {
+  display: block;
+  padding-top: 5px;
+   padding-left: 50px;
+}
+
+/* HOVER STYLES */
+div.pop-up {
+	display: none;
+	text-align: left;
+	position: absolute;
+	margin-left: 300px;
+	background: #333;
+	color: #E3E3E3;
+	border: 1px solid #666;
+	font-family:"Ruluko", Geneva, sans-serif;
+	margin-top: -180px;
+	width:410px;
+	/*height:450px;*/
+	padding: 12px;
+	/*display: none;
+  text-align: left;
+  position: absolute;
+  margin-left: 20px;
+background:#333;
+  color:#fff;
+ border: 1px solid #666;
+  font-family:"Ruluko", Geneva, sans-serif;
+	  margin-top: -50px;
+	 width:220px;
+	/*height:800px;*/
+	font-size: 15px;
+	line-height: 22px;
+	text-indent: 10px;
+}
+
+div.clear {
+  clear: both;
+}
+
+div.pop-upBackup {
+  display: none;
+  text-align: left;
+  position: absolute;
+
+  margin-left: 280px;
+  background: #333;
+  color: #000000;
+ border: 1px solid #666;
+  font-family:"Ruluko", Geneva, sans-serif;
+	  margin-top: -180px;
+	  width:220px;
+	/*height:450px;*/
+	padding: 5px;
+ 
+
+}

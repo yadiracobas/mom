@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main {
+	width:800px;
+	margin:auto;
+	padding-top:20px;
+}
+
+#login {
+	width:300px;
+	margin:auto;		
+}
+
+#menu {
+	width:600px;
+	margin:auto;
+	text-align:center;	
+	padding-bottom:25px;
+}
+
+#content {
+	width:600px;
+	margin:auto;	
+}
+
+.hide {
+	display:none;	
+}
+
+.display {
+	dislpay:block;	
+}
+
+.producto_list {
+	text-align:left;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:5px;
+	border:2px black solid;
+	padding-top:5px;
+	padding-bottom:5px;
+}	
+
+.existencias_list { 
+	cursor:pointer;	
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	background-color:#FFCCCC;
+	margin:1px;
+	width:475px;
+	background-image: url(../images/arrow-square.gif) !important;
+	background-repeat: no-repeat;
+	background-position: right -51px;
+}
+
+.stock_list {
+	padding: 5px 10px 15px;
+	background-color:#F4F4F8;
+	width:475px;
+}
+
+.edit_box {
+	width:150px;
+	text-align:right;
+	float:right;
+	padding-top:20px;	
+}
+
+.addCat {
+	text-align:center;	
+}
+
+.addCol {
+	text-align:center;	
+}
+
+body {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+.top {
+margin-bottom: 15px;
+}
+.buttondiv {
+margin-top: 10px;
+}
+.messagebox{
+	position:absolute;
+	width:100px;
+	margin-left:30px;
+	border:1px solid #c93;
+	background:#ffc;
+	padding:3px;
+}
+.messageboxok{
+	position:absolute;
+	width:auto;
+	margin-left:30px;
+	border:1px solid #349534;
+	background:#C9FFCA;
+	padding:3px;
+	font-weight:bold;
+	color:#008000;
+	
+}
+.messageboxerror{
+	position:absolute;
+	width:auto;
+	margin-left:30px;
+	border:1px solid #CC0000;
+	background:#F7CBCA;
+	padding:3px;
+	font-weight:bold;
+	color:#CC0000;
+}
+#upload_container {
+	width:500px;	
+}
+
+#upload{
+	margin:auto; padding:15px;
+	font-weight:bold; font-size:1.3em;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	background:#f2f2f2;
+	color:#3366cc;
+	border:1px solid #ccc;
+	width:200px;
+	cursor:pointer !important;
+	-moz-border-radius:5px; -webkit-border-radius:5px;
+}
+
+#status{
+	font-family:Arial; padding:5px;
+	text-align:center;
+}
+
+#mainbody {
+	width:700px;	
+}
+
+.adminBlock {
+	border:3px solid #ccc;	
+	margin-bottom:5px;
+}

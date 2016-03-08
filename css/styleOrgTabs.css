@@ -1,0 +1,94 @@
+/*
+	 Organic Tabs
+	 by Chris Coyier
+	 http://css-tricks.com
+	 
+	 código que se fue al principal
+	 * { margin: 0; padding: 0; }
+	body { font: 12px Georgia, serif; }
+	html { overflow-y: scroll; }
+	a { text-decoration: none; }
+	a:focus { outline: 0; }
+	p { font-size: 15px; margin: 0 0 20px 0; }
+*/
+
+
+#page-wrap {
+	margin: 0px 0px 0px 20px;
+	padding-right: 5px;
+}
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+
+/* Specific to example two */
+
+#example-two .list-wrap {
+	background: #eee;
+	padding: 5px 14px 20px 15px;
+	color: #666;
+	font-size: 14px;
+	letter-spacing: 0.07em;
+	width: 600px;
+	margin: -2px 0px 0px 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#example-two ul {
+	list-style: none;
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 4px;
+
+
+}
+#example-two ul li a {
+	display: block;
+	padding: 8px;
+	color: #666;
+	font-size: 16px;	
+	border-top: 1px solid #fff;
+}
+/*background: #AFD4DA;*/
+#example-two ul li a:hover {
+	background-color: #AFD4DA;
+	color: #333;
+}
+#example-two ul li:last-child a { border: none; }
+/*botones Menu*/
+#example-two .nav { overflow: hidden; }
+#example-two .nav li {
+	background: #fff;
+	float: left;
+	margin: 0px 0px 0px 0px ;
+	text-transform: uppercase;
+	font-family: Verdana, Geneva, sans-serif;
+	
+	
+}
+#example-two .nav li.last { margin-right: 0; }
+#example-two .nav li a {
+	display: block;
+	padding: 5px;
+	background: #eee;
+	
+	color: #333;
+	font-size: 13px;
+	text-align: center;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/*over y current*/
+#example-two li a.current,#example-two li a.current:hover {
+	background-color: #91151F!important;
+	color: #FCC;
+}
+#example-two .nav li a:hover, #example-two .nav li a:focus { background: #AFD4DA;}

@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* CSS Document */
+
+<style type="text/css">
+
+ * { margin: 0; padding: 0; }
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #2A3438;
+	background-image: url(../imagenes/backlineas.jpg);
+	background-attachment: fixed;
+}
+
+.container {
+
+	width: 1100px;
+	background: #FFF;
+	margin: 0 auto;
+	
+	
+	
+}
+
+
+/****** L I N K S  ******/
+a:link {
+	color: #91151F;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #74ABB3;
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	color: #87999F;
+	
+}
+
+
+
+/****** H  E  A  D  E  R  ******/
+
+
+ #titulo{
+	background: #91151f;
+	display: block;
+	vertical-align: bottom;
+	height: 370px;
+	width: 250px;
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	float: left;
+	margin-bottom: 15px;
+	}
+
+#titulo img{
+	margin-top: 60px;
+	 }
+
+.subtitulo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #666666;
+	text-align: left;
+	padding: 15px;
+	height: 120px;
+		}
+
+.frase {
+	margin-left: 270px;
+	margin-top: 0px;
+	margin-right: 10px;
+	font-family: "Simonetta", Georgia, "Times New Roman", Times, serif;
+	padding-left: 10px;
+	color: #333;
+	text-align: left;
+	font-size: 20px;
+	padding-top: 30px;
+	vertical-align: middle;
+	width: 580px;
+	line-height: 29px;
+	}
+	
+
+/****** NAV INSTITUCIONAL ******/	
+
+#indiceInstitucional {
+	margin-left: 270px;
+	margin-right: 0px;
+	background-color: #D8D8D8;
+	height: 39px;	
+}
+ul.navInst {
+	list-style: none;
+	font-family: "Ruluko", Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #918E7A;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: lighter;
+	word-spacing: 10px;
+	height: 32px;
+
+	}
+
+ul.navInst li {
+	padding: 0px 15px 0px 15px;
+	float: left;	
+}
+
+ul.navInst a, ul.navInst a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+
+	padding: 10px 15px 10px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	color: #666;
+
+}
+
+ ul.navInst a:hover, ul.navInst a:active, ul.navInst a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+
+	color: #666;
+	background: #FFE9D6;
+
+}
+
+	/****** SIDE BAR MAIN ******/	
+
+
+
+#sidebar1 {
+	width: 250px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #F90;
+	background-color: #FFF;
+	margin-top: 20px;
+	padding-top: 30px;
+	padding-right: 10;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	float: right;
+	padding-right: 10px;
+}
+
+#sidebar1 h1{
+
+	color:#F60;
+	font-family: "Simonetta",Georgia, Times, serif;
+	font-size: 25px;
+	font-weight: normal;
+	line-height: 27px;
+	
+	}
+	
+#sidebar1 img{
+	margin: 5px 0px 15px 0px;	
+
+		}
+		
+#sidebar1 h2{
+	color: #333;
+	font-family: "Simonetta",Georgia, Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+	margin: 5px 0px 5px 0px;
+	}
+	
+#sidebar1 h2 a{
+	text-decoration: underline;
+	font-size: 16px;
+	color: #FF6633;
+	}
+	
+#sidebar1 p{
+	color:#333;
+	font-family: "Ruluko",Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	line-height: 18px;
+
+	}
+
+/****** CONTENIDOS MAIN ******/	
+#main{
+	clear:both;
+	postion:relative;
+	
+	background-color: #FFF;
+	/*display: inline-block;
+	overflow: hidden;*/
+	
+}
+	
+.ContenidosBasico {
+	float: left;
+	width: 70%;
+	padding-top: 30px;
+	padding-left: 35px;
+	background-color: #FFF;
+}
+
+#ContenidosBase p{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 28px;
+	color: #333;
+	padding-right: 10px;
+	padding-left: 35px;
+}
+.ContenidosBasico p strong {
+	color: #F60;
+}
+
+#ContenidosBase h1, h2{
+
+	font-family: "Simonetta", Georgia, serif;
+	color: #F60;
+	font-weight: normal;
+}
+#ContenidosBase h1{
+    font-size:25px;
+}
+#ContenidosBase h2{
+
+	font-size:22px;
+}
+#ContenidosBase h3 {
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 25px;
+}
+#ContenidosBase h4 {
+	color: #666;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 25px;
+	
+}
+
+/****** F O O T E R S ******/	
+
+.clearfloat { /* empty div importante*/
+    position: relative;
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+
+}
+#footer0 {
+	background-color: #FFF;
+	background-image: url(../imagenes/fondofooter.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	clear: both;
+	height: 130px;
+	width: 100%;
+}
+#footer {
+	margin:0px;
+	height:300px;
+	font-size:11px;
+	padding: 10px 0;
+	position: relative;/*IE6 hasLayout to properly clear */
+	clear: both;
+	background-color: #374551;
+	font-family: Verdana, Geneva, Helvetica, sans-serif;
+	color: #FFF;
+	background-image: url(../imagenes/fondofooter2.jpg);
+	background-repeat: repeat-x;
+}
+
+.listaAbajo {
+	padding: 5px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #900;
+	float: left;
+	margin-left: 180px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+ul.listasite li {
+	list-style: none;
+	padding-right: 3px;
+	font-size: 12px;
+	color: #FCC;
+	list-style:none;
+}
+
+ul.listasite a, ul.listasite a:visited {
+	padding: 13px 13px 13px 13px;
+	display: block;
+	text-decoration: none;
+	color: #CCC;
+}
+
+.listasite h1{
+
+	color:#CCC;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: normal;
+
+	}
+
+ul.listasite a:hover, ul.listasite a:active, u.listasite a:focus { 
+	color: #333;
+	background-color: #CBE0E7;
+}
+
+#footerContacto{
+	margin:0px;
+	height:180;
+	font-size:13px;
+	line-height: 16px;
+	font-family: "Ruluko",Geneva, Verdana, sans-serif;
+	color: #FFF;
+	padding-top: 10px;
+	padding-left: 100px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	background-color: #91151f;
+	
+}
+#footer img{
+	padding:15px;
+	}
+
+/*******  B U S C A D O R  **********/
+
+.listaBuscador{
+	list-style:none;
+	background:#333;
+	font-family: "Ruluko",Verdana,Geneva,sans-serif;
+	font-size: 15px;
+	color: #FCC;
+	height: 80px;
+	border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	padding-left:15px;
+	padding-top:10px;
+
+	}
+
+
+
+.listaBuscador input{
+	size: 30px;
+	font-size:11pt;
+	color: #000;
+	background:#999;
+	border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	padding: 3px;
+	border: 1px solid #333;
+
+	}
+
+/****** NAV ORG TABS ******/	
+
+
+ul.nav {
+	list-style: none;
+	font-family: "Ruluko", Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #767A7E;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: lighter;
+	word-spacing: 10px;
+	height: 32px;
+	margin:0px;
+	}
+
+ul.nav li {
+	padding: 0px 15px 0px 15px;
+	float: left;
+	list-style:none;
+}
+
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+
+	padding: 10px 15px 10px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	color: #666;
+
+}
+
+ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	color: #666;
+	background-color: #FFE9D6;
+}
+	
+/******* R E S U l T A D O S *******/
+
+.suggestionListObra li {
+	margin: 0px;
+	padding: 3px;
+	background-color: #D8D8D8;
+	list-style:none;
+	}
+.suggestionListObra li a:hover, ul.nav a:active, ul.nav a:focus { 
+		color: #666;
+		background: #FFE9D6;
+
+	}
+.suggestionListAutor li {		
+
+		margin: 0px 0px 3px 0px;
+		padding: 3px;
+
+	}
+	
+.suggestionListAutor li a:hover, ul.nav a:active, ul.nav a:focus {
+	color: #333;
+	background-color: #BAC7D1;
+	}
+	
+	
+	

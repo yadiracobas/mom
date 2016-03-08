@@ -1,0 +1,809 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+
+    
+
+<style type="text/css">
+
+
+
+ * { margin: 0; padding: 0; }
+
+	
+
+	
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #2A3438;
+	background-image: url(../imagenes/backlineas.jpg);
+	background-attachment: fixed;
+}
+
+
+
+/* ~~ Element/tag selectors ~~ */
+
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+
+	padding: 0;
+
+	margin: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	padding-left: 25px;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+
+	border: none;
+
+}
+
+
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+
+a:link {
+
+	color:#414958;
+
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+
+}
+
+a:visited {
+
+	color: #4E5869;
+
+	text-decoration: underline;
+
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+
+	text-decoration: underline;
+
+	color: #77A3C5;
+
+}
+
+
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+
+.container {
+
+	width: 1100px;
+
+	/*max-width: 1260px; a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+
+	/* min-width: 780px;a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+
+	background: #FFF;
+
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+
+}
+
+
+
+
+
+.header {
+
+	background: #fff;
+
+	
+
+	
+
+}
+
+
+
+ #titulo{
+
+	background: #91151f;
+
+	display:block;
+
+	vertical-align:bottom;
+
+	height: 300px;
+
+	width: 250px;
+
+	text-align: center;
+
+	margin-left: 25px;
+
+	margin-right: 25px;
+
+	float:left;
+
+	margin-bottom: 15px;
+
+	}
+
+	 #titulo img{
+	padding-top: 40px;
+	 }
+
+		.subtitulo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #666666;
+	text-align: left;
+	padding: 15px;
+	height: 120px;
+		}
+
+		.frase {
+	margin-left: 270px;
+	margin-top: 0px;
+	margin-right: 10px;
+	font-family: "Simonetta", Georgia, "Times New Roman", Times, serif;
+	padding-left: 10px;
+	color: #333;
+	text-align: left;
+	font-size: 25px;
+	margin-bottom: 35px;
+	padding-top: 45px;
+	vertical-align: middle;
+	width: 580px;
+	line-height: 29px;
+	}
+
+	
+	/*menu institucional*/
+
+
+
+
+
+ul.nav {
+	list-style: none; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 25px; /* this creates the space between the navigation on the content below */
+	font-family: "Ruluko", Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #918E7A;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: lighter;
+	margin-top: 10px;
+	margin-left: 35px;
+	word-spacing: 10px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #c30;
+	height: 32px;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #c30;
+	margin-left:35px;
+	margin-right:35px;padding-left:45px;
+	
+}
+
+ul.nav li {
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+
+	padding: 5px 15px 5px 15px;
+
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+
+	text-decoration: none;
+
+	color: #666;
+
+	/*background-color: #FFC;*/
+
+}
+
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+
+	color: #666;
+
+	background: #FFE9D6;
+
+}
+
+
+
+
+
+
+	/*////////////*/
+
+	
+
+	
+
+#slider {
+
+	width: 800px;
+
+	height: 251px;
+
+	
+
+}
+
+
+
+.paraSlider2{
+	margin-top: 15px;
+	width: 100%;
+	height: 100px;
+}
+
+
+
+#sidebar1 {
+	width: 250px;
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color: #F90;
+	background-color: #FFF;
+	margin-top: 20px;
+	padding-top: 30px;
+	padding-right: 10;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	float: right;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+	#sidebar1 h1{
+
+	color:#F60;
+
+	font-family: "Simonetta",Georgia, "Times New Roman", Times, serif;
+
+	font-size: 25px;
+
+	font-weight: normal;
+
+	line-height: 27px;
+
+	}
+
+	#sidebar1 p{
+
+	color:#333;
+
+	font-family: "Ruluko",Verdana, Geneva, sans-serif;
+
+	font-size: 15px;
+
+	line-height: 20px;
+
+	}
+
+.content {
+
+	width: 60%;
+
+	float: left;
+
+	padding-top: 0px;
+
+	padding-right: 15px;
+
+	padding-bottom: 35px;
+
+	padding-left: 30px;
+
+}
+.parrafo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 25px;
+	color: #333;
+	padding-right: 10px;
+	padding-left: 35px;
+}
+.ContenidosBasico {
+	width: 70%;
+	padding-left: 35px;
+	float: left;
+	padding-top: 30px;
+}
+
+
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~
+
+.content ul, .content ol {*/
+
+	/*padding: 0 15px 15px 15px;   this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish.}} */
+
+
+.listaContacto{
+
+	background:#333;
+
+	font-family: "Ruluko",Verdana, Geneva, sans-serif;
+
+	font-size: 15px;
+
+	color: #FCC;
+
+	height: 280px;
+
+	padding: 10px;
+
+	border-radius: 10px;
+
+	-ms-border-radius: 10px;
+
+	-moz-border-radius: 10px;
+
+	-webkit-border-radius: 10px;
+
+	-khtml-border-radius: 10px;
+
+	}
+
+
+
+
+/*estilo renglon buscador en las organica tabs*/
+
+
+
+.listaBuscador{
+
+	background:#333;
+
+	font-family: "Ruluko",Verdana, Geneva, sans-serif;
+
+	font-size: 15px;
+
+	color: #FCC;
+
+	height: 80px;
+	
+
+	border-radius: 10px;
+
+	-ms-border-radius: 10px;
+
+	-moz-border-radius: 10px;
+
+	-webkit-border-radius: 10px;
+
+	-khtml-border-radius: 10px;
+
+	}
+
+
+
+.listaBuscador input{
+
+	size: 30;
+
+	font-size:11pt;
+
+	color: #000;
+
+	background:#999;
+
+	border-radius: 10px;
+
+	-ms-border-radius: 10px;
+
+	-moz-border-radius: 10px;
+
+	-webkit-border-radius: 10px;
+
+	-khtml-border-radius: 10px;
+
+	margin: 6px;
+
+	padding: 3px;
+
+	border: 1px solid #333;
+
+	}
+
+
+
+/* COLUMNAS ABAJO CONTENIDOS*/
+
+.columnasContenidoA{
+
+	float: right;
+
+	background: #93A5C4;
+
+	background-color: #FFF;
+
+	margin-top: 20px;
+
+	padding: 20px;
+
+	width: 280px;
+
+}
+
+.columnasContenidoA h1{
+
+	color:#F60;
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	font-size: 25px;
+
+	font-weight: normal;
+
+	}
+
+	.columnasContenidoA img{
+
+	
+
+	padding: 5px;
+
+	
+
+	}
+
+	.columnasContenidoA p{
+
+	color:#333;
+
+	font-family: "Ruluko",Verdana, Geneva, sans-serif;
+
+	font-size: 15px;
+
+	line-height: 20px;
+
+	}
+
+	
+
+
+
+.columnasContenidoB{
+	width: 32%;
+	background-color: #FFF;
+	margin-top: 20px;
+	width: 83%;
+	padding: 0px;
+	float: right;
+	margin-right: 30px;
+	margin-bottom: 50px;
+}
+
+.columnasContenidoB h1{
+	color:#F60;
+	font-family: "Simonetta", Georgia, serif;
+	font-size: 28px;
+	font-weight: normal;
+	}
+
+	.columnasContenidoB img{
+
+	
+
+	padding: 5px;
+
+	
+
+	}
+
+	.columnasContenidoB p{
+	color:#333;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 25pt;
+	}	
+
+	
+
+/* ~~ LOS footer ~~ */
+
+#footer {
+	clear:both;
+	height:240px;
+	font-size:11px;
+	line-height: 8px;
+	padding: 10px 0;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both;/*this clear property forces the .container to understand where the columns end and contain them */
+	background-color: #374551;
+	font-family: Verdana, Geneva, Helvetica, sans-serif;
+	color: #FFF;
+	background-image: url(../imagenes/fondofooter2.jpg);
+	background-repeat: repeat-x;
+}
+
+.listaAbajo {
+
+	padding: 30px;
+
+	border-left-width: thin;
+
+	border-left-style: solid;
+
+	border-left-color: #900;
+
+	float: left;
+
+	margin-left: 180px;
+
+}
+
+.listasite ul{
+	list-style: none;
+	color:#666;
+	font-size: 12px;
+	line-height: 20px;
+	
+
+	}
+
+
+
+ul.listasite li {
+	list-style: none;
+	padding-right: 3px;
+	font-size: 12px;
+	color: #FCC;
+}
+
+ul.listasite a, ul.listasite a:visited {
+	padding: 13px 13px 13px 13px;
+	display: block;
+	text-decoration: none;
+	color: #CCC;
+}
+
+	.listasite h1{
+
+	color:#CCC;
+
+	text-transform: uppercase;
+
+	font-size: 13px;
+
+	font-weight: normal;
+
+	}
+
+	
+
+	ul.listasite a:hover, ul.listasite a:active, u.listasite a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	color: #333;
+	background-color: #CBE0E7;
+}
+
+	
+
+	#footerContacto{
+	clear:both;
+	height:180;
+	font-size:13px;
+	line-height: 16px;
+	position: relative;
+	font-family: "Ruluko",Geneva, Verdana, sans-serif;
+	color: #FFF;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	background-color: #91151f;
+	background-repeat: no-repeat;
+	background-image: url(imagenes/logo.jpg);
+	padding-top: 10px;
+	padding-left: 100px;
+}
+
+
+
+
+
+
+
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+
+	clear:both;
+
+	height:0;
+
+	font-size: 1px;
+
+	line-height: 0px;
+
+}
+
+
+
+.textoDerechos{
+
+	font-family: Verdana, Geneva, sans-serif;
+
+	font-size: 11px;
+
+	letter-spacing: 0.08em;
+
+	text-align: center;
+
+	}
+
+
+
+.suggestionListObra li {		
+
+		margin: 0px 0px 3px 0px;
+
+		padding: 3px;
+
+	}
+
+	
+
+.suggestionListObra li a:hover, ul.nav a:active, ul.nav a:focus { 
+
+		color: #666;
+
+		background: #FFE9D6;
+
+	}
+
+	
+
+.suggestionListAutor li {		
+
+		margin: 0px 0px 3px 0px;
+
+		padding: 3px;
+
+	}
+
+
+
+.suggestionListAutor li a:hover, ul.nav a:active, ul.nav a:focus {
+	color: #333;
+	background-color: #BAC7D1;
+	}
+
+
+
+ul.masResultados {
+
+	list-style: none; 
+
+	margin-bottom: 15px; 
+
+	font-family: "Ruluko",Verdana, Geneva, sans-serif;
+
+	font-size: 15px;
+
+	color: #918E7A;
+
+	padding-top: 60px;
+
+}
+
+ul.masResultados h2{
+
+	font-family: "Simonetta",Georgia, "Times New Roman", Times, serif;
+
+	font-size: 17px;
+
+	color: #666;
+
+	line-height: 20px;
+
+	font-weight: 500;
+
+}
+
+ul.masResultados li  {
+
+	padding-right: 15px;
+
+	padding-left: 15px;
+
+	
+
+}
+
+ul.masResultados a, ul.masResultados a:visited { 
+
+	padding: 5px 2px 2px 18	px;
+
+	display: block; 
+
+	text-decoration: underline;
+
+	color: #666;
+
+	
+
+}
+
+ul.masResultados a:hover, ul.masResultados a:active, ul.masResultados a:focus { 
+
+	color: #666;
+
+	background-color: #D4F4FF;
+
+}
+
+
+
+#footer0 {
+	background-color: #FFF;
+	background-image: url(../imagenes/fondofooter.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	clear: both;
+	height: 130px;
+	width: 100%;
+}
+
+.titulo {
+	font-family: "Simonetta", Georgia, serif;
+	color: #F60;
+	font-size: 25px;
+	line-height: 27px;
+	font-weight: normal;
+}
+.parrafo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 25px;
+	color: #333;
+	padding-right: 10px;
+	padding-left: 35px;
+}
+.ContenidosBasico {
+	width: 70%;
+	padding-left: 35px;
+	float: left;
+	padding-top: 30px;
+	background-color: #FFF;
+}
+.table {
+	background-color: #FFF;
+	padding: 10px;
+	margin-left: 25px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #B2CBC9;
+}
+#sidebar1 h2 a {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #666;
+}
+#main .ContenidosBasico .parrafo strong {
+	color: #F60;
+}
